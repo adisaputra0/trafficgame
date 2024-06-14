@@ -1,0 +1,239 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+.gameBoard{
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #282c34;
+}
+.div-center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.Game-logo {
+  height: 30vmin;
+  margin: 5px 0px;
+  pointer-events: none;
+}
+.game-over{
+    background-color: #282c34;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+button{
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+.d-none{
+    display: none !important;
+}
+.d-flex{
+    display: flex;
+}
+ul{
+    text-align: start; 
+    gap: 10px;
+}
+.w-90{
+    width: 90%;
+}
+.w-100{
+    width: 100%;
+}
+.p-5{
+    padding: 0px 50px;
+}
+.m-5{
+    margin: 0px 50px;
+}
+.w-50{
+    width: 50%;
+}
+.text-justify{
+    text-align: justify;
+}
+.m-auto{
+    margin: auto;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.top-10{
+    top: 10px;
+}
+.right-10{
+    right: 10px;
+}
+.w-max{
+    width: max-content;
+}
+.close{
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+    border: 1px solid white;
+    z-index: 999;
+}
+
+/* Way */
+.vertical-way{
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    height: 100%;
+    background-color: black;
+}
+.vertical-white-line{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 20px;
+    height: 60px;
+    background-color: white;
+}
+.horizontal-way{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+.horizontal-white-line{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 60px;
+    height: 20px;
+    background-color: white;
+}
+
+/* Traffic Light */
+.traffic_light{
+    position: absolute;
+    left: 310px;
+    bottom: 165px;
+    width: 60px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 40px red;
+    z-index: 3;
+}
+.traffic_light2{
+    position: absolute;
+    left: 430px;
+    bottom: 320px;
+    width: 60px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 40px red;
+    z-index: 3;
+}
+.traffic_light3{
+    position: absolute;
+    left: 470px;
+    bottom: 165px;
+    width: 20px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 40px red;
+    z-index: 3;
+}
+.traffic_light4{
+    position: absolute;
+    left: 310px;
+    bottom: 280px;
+    width: 20px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 40px red;
+    z-index: 3;
+}
+
+/* Car */
+.vertical-car{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(30px 0px 20px white);
+    z-index: 2;
+    transform: rotate(-90deg);
+}
+.vertical-car2{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(30px 0px 20px white);
+    z-index: 2;
+    transform: rotate(90deg);
+}
+.horizontal-car{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(30px 0px 20px white);
+    z-index: 2;
+}
+.horizontal-car2{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(30px 0px 20px white);
+    z-index: 2;
+    transform: rotate(-180deg);
+}
+
+.point-time{
+    position: absolute;
+    flex-direction: column;
+    top: 10px;
+    left: 30px;
+}
+h3{
+    margin: 5px 0px;
+}
