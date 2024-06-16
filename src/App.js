@@ -320,6 +320,20 @@ function AboutGame({classText}){
     </>
   );
 }
+function Warning(){
+  return(
+    <>
+      <div className={`warning div-center`}>
+        <h1>Dear User</h1>
+        <hr className='w-90' />
+        <p className='p-5'>
+          We regret to inform you that your current device is not compatible with this game. For the best experience, please use a device with a minimum screen resolution of 800 pixels in width and 500 pixels in height. We recommend using a tablet or a PC to enjoy the game fully.
+          Thank you for your understanding.
+        </p>
+      </div>
+    </>
+  );
+}
 
 function App() {
   const [classMenuGame, changeClassMenuGame] = useState("d-flex");
@@ -370,13 +384,16 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <div className='gameBoard position-relative'>
-      <MenuGame classText={classMenuGame} actionPlay={clickPlay} actionInstruction={clickInstruction} actionAbout={clickAbout}/>
-      <PlayGame classText={classPlayGame} condition={conditionPlay}/>
-      <InstructionGame classText={classInstructionGame}/>
-      <AboutGame classText={classAboutGame}/>
-      <button className={`${classClose} position-absolute top-10 right-10 w-max close`} onClick={clickClose}>X</button>
-    </div>
+    <>
+      <div className='gameBoard position-relative'>
+        <MenuGame classText={classMenuGame} actionPlay={clickPlay} actionInstruction={clickInstruction} actionAbout={clickAbout}/>
+        <PlayGame classText={classPlayGame} condition={conditionPlay}/>
+        <InstructionGame classText={classInstructionGame}/>
+        <AboutGame classText={classAboutGame}/>
+        <button className={`${classClose} position-absolute top-10 right-10 w-max close`} onClick={clickClose}>X</button>
+      </div>
+      <Warning />
+    </>
   );
 }
 
